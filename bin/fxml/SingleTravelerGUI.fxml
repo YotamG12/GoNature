@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane id="pane1" dividerPositions="0.2993827160493827" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" stylesheets="@SingleTravelerGUI.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SingleTravelerGUIController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Button id="btnLogout" fx:id="btnLogout" layoutX="54.0" layoutY="525.0" mnemonicParsing="false" onAction="#Logout" prefHeight="67.0" prefWidth="67.0">
+               <graphic>
+                  <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logoutBtn.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="btnResManag" fx:id="btnResManag" mnemonicParsing="false" onAction="#MoveToResManag" prefHeight="130.0" prefWidth="190.0">
+               <graphic>
+                  <ImageView fitHeight="87.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/checklistlogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label id="lblReservationManagment" fx:id="lblReservationManagment" layoutX="30.0" layoutY="104.0" text="Reservation Managment" />
+         </children></AnchorPane>
+    <AnchorPane id="pane1" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="btnExit" layoutX="401.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="40.0">
+               <graphic>
+                  <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/exitBtn.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="433.0" fitWidth="359.0" layoutX="37.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Single%20Traveler.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

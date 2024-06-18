@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" stylesheets="@SupportCenter.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SupportCenterController">
+   <children>
+      <TextField id="txtFID" fx:id="txtFID" layoutX="250.0" layoutY="306.0" promptText="ID" />
+      <Button id="btnSubmit" fx:id="btnSubmit" layoutX="297.0" layoutY="363.0" mnemonicParsing="false" onAction="#Submit" text="Submit" />
+      <Button fx:id="btnExit" layoutX="599.0" layoutY="1.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="40.0">
+         <graphic>
+            <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exitBtn.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+         <Button id="btnLogout" fx:id="btnLogout" layoutX="2.0" layoutY="525.0" mnemonicParsing="false" onAction="#Logout" prefHeight="67.0" prefWidth="67.0">
+         <graphic>
+            <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logoutBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="222.0" layoutY="251.0" text="Register a Group Guide">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="214.0" fitWidth="268.0" layoutX="191.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Support%20Center.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="500.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/treeLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

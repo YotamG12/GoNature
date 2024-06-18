@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" stylesheets="@ReservationConfirmation.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReservationConfimationController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <Label fx:id="lblRID" layoutX="51.0" layoutY="183.0" text="Reservation Number" />
+      <Label fx:id="lblID" layoutX="51.0" layoutY="232.0" text="ID" />
+      <Label fx:id="lblNOV" layoutX="51.0" layoutY="319.0" text="No. of Visitors" />
+      <Label fx:id="lblDate" layoutX="379.0" layoutY="184.0" text="Date" />
+      <Label fx:id="lblET" layoutX="377.0" layoutY="232.0" text="Time " />
+      <Label fx:id="lblTN" layoutX="377.0" layoutY="275.0" text="Phone Number" />
+      <Label fx:id="lblEmail" layoutX="378.0" layoutY="319.0" text="Email" />
+      <Label fx:id="lblPN" layoutX="51.0" layoutY="275.0" text="Park Name" />
+      <Label fx:id="lblCON" layoutX="98.0" layoutY="385.0" text="Thank you, your reservation has been  confirmed">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRID3" disable="true" layoutX="180.0" layoutY="180.0" promptText="1" text="" />
+      <TextField fx:id="txtID" disable="true" layoutX="180.0" layoutY="229.0" promptText="1" text="" />
+      <TextField fx:id="txtPN" disable="true" layoutX="180.0" layoutY="271.0" promptText="1" text="" />
+      <TextField fx:id="txtNOV" disable="true" layoutX="180.0" layoutY="316.0" promptText="1" text="" />
+      <TextField fx:id="txtDate" disable="true" layoutX="474.0" layoutY="180.0" promptText="1" text="" />
+      <TextField fx:id="txtTime" disable="true" layoutX="474.0" layoutY="228.0" promptText="1" text="" />
+      <TextField fx:id="txtTN" disable="true" layoutX="474.0" layoutY="271.0" promptText="1" text="" />
+      <TextField fx:id="txtEmail" disable="true" layoutX="474.0" layoutY="316.0" promptText="1" text="" />
+      <Label id="lblPrepayment" fx:id="lblPrepayment" layoutX="188.0" layoutY="446.0" text="Whould you like to make a prepayment?" visible="false">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Button id="btnPrePayment" fx:id="btnPrePayment" layoutX="297.0" layoutY="491.0" mnemonicParsing="false" onAction="#CreatePrepayment" text="Prepayment" visible="false" />
+      <Button id="btnHome" fx:id="btnHome" mnemonicParsing="false" onAction="#Home" prefHeight="4.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fx:id="HomeImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/homeBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnExit" layoutX="600.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="40.0">
+         <graphic>
+            <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exitBtn.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="156.0" fitWidth="266.0" layoutX="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Confirmation%20Of%20Reservation.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/treeLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

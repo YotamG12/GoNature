@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" stylesheets="@WelcomePage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.WelcomePageController">
+   <children>
+      <Button id="btnCO" fx:id="btnCO" layoutX="213.0" layoutY="468.0" mnemonicParsing="false" onAction="#CreateReservation" prefHeight="43.0" prefWidth="225.0" text="Create a New Reservation">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font></Button>
+      <Label layoutX="169.0" layoutY="439.0" text="*If you dont have a reservation yet, Press here">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button id="btnWorkerLogin" fx:id="btnWorkerLogin" layoutX="273.0" layoutY="300.0" mnemonicParsing="false" onAction="#WorkerLogin" prefHeight="43.0" prefWidth="105.0" text="Worker Login">
+      <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Button>
+      <Button id="btnTravelerLogin" fx:id="btnTravelerLogin" layoutX="273.0" layoutY="362.0" mnemonicParsing="false" onAction="#TravelerLogin" prefHeight="43.0" prefWidth="105.0" text="Traveler Login">
+    <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Button>
+    <Button fx:id="btnExit" layoutX="584.0" layoutY="1.0" mnemonicParsing="false" onAction="#Exit" prefHeight="50.0" prefWidth="50.0">
+         <graphic>
+            <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exitBtn.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="243.0" fitWidth="241.0" layoutX="208.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo1.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

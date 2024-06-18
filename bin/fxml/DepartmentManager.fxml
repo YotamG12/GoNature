@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane id="pane1" dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" stylesheets="@DepartmentManagar.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentManagerController">
+  <items>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+         <children>
+            <Button id="btnParksDetails" fx:id="btnParkDetails" layoutX="-1.0" mnemonicParsing="false" onAction="#ParkDetails" prefHeight="130.0" prefWidth="190.0">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/mountainLogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="btnViewReports" fx:id="btnViewReports" layoutX="-1.0" layoutY="132.0" mnemonicParsing="false" onAction="#ViewReports" prefHeight="130.0" prefWidth="190.0">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/graphLogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="btnCreateReports" fx:id="btnCreateReports" layoutX="-1.0" layoutY="264.0" mnemonicParsing="false" onAction="#CreateReports" prefHeight="130.0" prefWidth="190.0">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/graphLogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="btnAUP" fx:id="btnAUP" layoutX="-1.0" layoutY="396.0" mnemonicParsing="false" onAction="#AppParamUpdate" prefHeight="130.0" prefWidth="190.0">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/likelogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="btnLogout" fx:id="btnLogout" layoutX="51.0" layoutY="528.0" mnemonicParsing="false" onAction="#Logout" prefHeight="71.0" prefWidth="79.0">
+               <graphic>
+                  <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logoutBtn.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label id="lblParkDetails" fx:id="lblParkDetails" layoutX="64.0" layoutY="102.0" text="Park Details" />
+            <Label id="lblViewExistingReports" fx:id="lblViewExistingReports" layoutX="39.0" layoutY="233.0" prefHeight="8.0" prefWidth="114.0" text="View Existing Reports" />
+            <Label id="lblCreateReports" fx:id="lblCreateReports" layoutX="53.0" layoutY="363.0" text="Create Reports" />
+            <Label id="lblApproveParametersUpdate" fx:id="lblApproveParametersUpdate" layoutX="19.0" layoutY="489.0" text="Approve Parameters Update" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+         <children>
+            <ComboBox id="comboChooseReport" fx:id="comboChooseReport" layoutX="150.0" layoutY="212.0" prefWidth="150.0" promptText="Choose Report" visible="false" />
+            <ComboBox id="comboChoosePark" fx:id="comboChoosePark" layoutX="150.0" layoutY="255.0" prefWidth="150.0" promptText="Choose Park" visible="false" />
+            <DatePicker id="DateFrom" fx:id="DateFrom" layoutX="150.0" layoutY="300.0" prefHeight="25.0" prefWidth="150.0" promptText="From" visible="false" />
+            <DatePicker id="DateTo" fx:id="DateTo" layoutX="150.0" layoutY="343.0" prefHeight="25.0" prefWidth="150.0" promptText="To" visible="false" />
+            <Button id="btnView" fx:id="btnView" layoutX="204.0" layoutY="389.0" mnemonicParsing="false" onAction="#ViewChosenReport" text="View" visible="false" />
+            <TableView fx:id="tbiParametersToApprove" layoutX="44.0" layoutY="231.0" prefHeight="267.0" prefWidth="369.0" visible="false">
+               <columns>
+                  <TableColumn id="Park Name" fx:id="ckmParkName" prefWidth="93.0" text="ParkName" />
+                  <TableColumn id="Parameter To Update" fx:id="clmParameter" prefWidth="109.5" text="Type" />
+                  <TableColumn id="Value" fx:id="clmValue" prefWidth="82.0" text="NewValue" />
+                  <TableColumn id="Status" fx:id="clmStatus" prefWidth="83.5" text="Status" />
+               </columns>
+            </TableView>
+            <Button id="Approve" fx:id="btnApprove" layoutX="163.0" layoutY="523.0" mnemonicParsing="false" onAction="#ApproveParameters" text="Approve" visible="false" />
+            <Button id="Decline" fx:id="btnDecline" layoutX="239.0" layoutY="523.0" mnemonicParsing="false" onAction="#DeclineParameters" text="Decline" visible="false" />
+            <Button fx:id="btnExit" layoutX="402.0" mnemonicParsing="false" onAction="#Exit" prefHeight="42.0" prefWidth="48.0">
+               <graphic>
+                  <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/exitBtn.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="221.0" fitWidth="229.0" layoutX="110.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Department%20Manager.png" />
+               </image>
+            </ImageView>
+            <Button id="btnCreateandView" fx:id="btnCreateandView" layoutX="173.0" layoutY="388.0" mnemonicParsing="false" onAction="#CreateandView" text="Create and View" visible="false" />
+            <TableView fx:id="tblParkDetails" layoutX="10.0" layoutY="199.0" prefHeight="200.0" prefWidth="438.0" visible="false">
+               <columns>
+                  <TableColumn id="clmParkName" fx:id="clmParkName" prefWidth="75.0" text="park Name" />
+                  <TableColumn id="DurationTime" fx:id="clmDurationTime" prefWidth="104.5" text="Duration Time" />
+                  <TableColumn id="clmCapacity" fx:id="clmCapacity" prefWidth="75.0" text="Capacity" />
+                  <TableColumn id="clmGap" fx:id="clmGap" prefWidth="75.0" text="Gap" />
+                  <TableColumn id="ParkManager" fx:id="clmParkManager" prefWidth="107.5" text="park Manager" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

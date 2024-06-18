@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" stylesheets="@FinalBill.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FinalBillController">
+   <children>
+      <Pane layoutX="62.0" layoutY="207.0" prefHeight="299.0" prefWidth="537.0" style="-fx-background-color: white;" />
+      <Label id="lblTypeDescription" fx:id="lblTypeDescription" layoutX="113.0" layoutY="241.0" text="Reservation Type:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblError" layoutX="160.0" layoutY="356.0" text="We sorry Thare is no avalilable time" textFill="#d31e1e" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text id="txtTypeDescription" fx:id="txtTypeDescription" layoutX="337.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fhfghfhfg" wrappingWidth="202.0" />
+      <Label id="lblDiscountDescription" fx:id="lblDiscountDescription" layoutX="113.0" layoutY="325.0" text="Discount Description:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text id="txtDiscountDesctription" fx:id="txtDiscountDesctription" layoutX="372.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ngvnvnvn" wrappingWidth="202.0" />
+      <Label id="lblTotalAmount" fx:id="lblTotalAmount" layoutX="113.0" layoutY="414.0" text="Total Amount:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text id="txtTotalAmount" fx:id="txtTotalAmount" layoutX="284.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nnvgngvgngvn" wrappingWidth="202.0" />
+       <Button fx:id="btnExit" layoutX="600.0" layoutY="-1.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="40.0">
+         <graphic>
+            <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exitBtn.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button id="btnHome" fx:id="btnHome" mnemonicParsing="false" onAction="#Home" prefHeight="4.0" prefWidth="0.0">
+         <graphic>
+            <ImageView fx:id="HomeImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/homeBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="189.0" fitWidth="281.0" layoutX="194.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Billing%20Summary.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

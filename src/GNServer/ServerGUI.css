@@ -1,0 +1,81 @@
+.root {
+    -fx-background-color:#ffffff;
+}
+
+.label, .text {
+    -fx-text-fill: #4a4a4a; /* Dark grey for readability */
+    
+}
+
+.button {
+    -fx-background-color: #99BC85;
+    -fx-background-radius: 30px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 4,0,2,2 );
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-transition: all 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: #436850;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 8,0,4,4 );
+}
+
+.button:pressed {
+    -fx-background-color: #82bfb6;
+}
+
+
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 10; /* Softer edges */
+    -fx-border-color: #aaaaaa; /* Softer border color */
+    -fx-border-radius: 10;
+    -fx-font-family: "Calibri"; /* Consistent playful font */
+}
+
+.table-view {
+    -fx-background-color: #F8FFFF;
+    -fx-border-color: #F8FFFF;
+
+    -fx-padding: 0px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #99BC85;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-family: "Calibri";
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header:hover {
+    -fx-background-color: #D4E7C5;
+}
+
+
+#textError1 {
+    -fx-fill: #ff0000; /* Bright red for attention */
+    -fx-font-size: 16px; /* Slightly larger for visibility */
+    -fx-font-family: "Calibri"; /* Keeping the playful theme */
+}
+#textError2 {
+    -fx-fill: #ff0000; /* Bright red for attention */
+    -fx-font-size: 16px; /* Slightly larger for visibility */
+    -fx-font-family: "Calibri"; /* Keeping the playful theme */
+}
+
+

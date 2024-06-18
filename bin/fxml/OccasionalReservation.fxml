@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="600.0" stylesheets="@OccasionalReservation.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OccasionalReservationController">
+   <children>
+      <TextField id="txtFUserID" fx:id="txtFUserID" layoutX="227.0" layoutY="216.0" promptText="ID" />
+      <TextField id="txtFNumOfVisitors" fx:id="txtFNumOfVisitors" layoutX="227.0" layoutY="259.0" promptText="Number of Visitors" visible="false" />
+      <TextField id="txtFPhoneNum" fx:id="txtFPhoneNum" layoutX="227.0" layoutY="301.0" promptText="Phone Num" visible="false" />
+      <TextField id="txtFEmail" fx:id="txtFEmail" layoutX="227.0" layoutY="342.0" promptText="Email" visible="false" />
+      <Button id="btnSubmit" fx:id="btnSubmit" disable="true" layoutX="272.0" layoutY="395.0" mnemonicParsing="false" onAction="#CreateNewOccasionalReservation" text="Submit" visible="false" />
+      <Button id="btnCheckGroupGuide" fx:id="btnCheckGroupGuide" layoutX="394.0" layoutY="216.0" mnemonicParsing="false" onAction="#CheckGroupGuide" text="check" visible="false" />
+      <ComboBox id="choiseboxType" fx:id="choiseboxType" layoutX="224.0" layoutY="173.0" prefWidth="150.0" promptText="Reservation Type" />
+      <Button fx:id="btnExit" layoutX="550.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="40.0">
+         <graphic>
+            <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exitBtn.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+         <Button id="btnBack" fx:id="btnBack" mnemonicParsing="false" onAction="#Back" prefHeight="50.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fx:id="backImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/backBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Occasional%20Reservation.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="214.0" fitWidth="204.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/treeLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

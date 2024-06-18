@@ -1,0 +1,110 @@
+.root {
+    -fx-background-color:#EEF5FF;
+}
+
+.label, .text {
+    -fx-text-fill: #4a4a4a; /* Dark grey for readability */
+
+}
+
+.button {
+    -fx-background-color: #e6f0ff;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 4,0,2,2 );
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-transition: all 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: #e6ffee;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 8,0,4,4 );
+}
+
+.button:pressed {
+    -fx-background-color: #82bfb6;
+}
+
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: white; /* Softer border color */
+    -fx-font-family: "Calibri"; /* Consistent playful font */
+}
+
+.combo-box{
+	 -fx-background-color: white;
+}
+.combo-box .list-view {
+    -fx-background-color: lightblue; /* צבע רקע */
+}
+
+#btnExit{
+	-fx-background-color: rgba(0, 123, 255, 0);
+    -fx-background-radius: 50px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 4,0,2,2 );
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-transition: all 0.2s;
+}
+#btnExit:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 8,0,4,4 );
+}
+
+#btnLogout{
+	 -fx-background-color: rgba(0, 123, 255, 0);
+}
+#btnLogout:hover{
+	-fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 8,0,4,4 );
+}
+
+.table-view {
+    -fx-background-color: rgba(0, 123, 255, 0);
+    -fx-border-color: rgba(0, 123, 255, 0);
+
+    -fx-padding: 0px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e6ffee;
+    -fx-border-color: rgba(0, 123, 255, 0);
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-family: "Calibri";
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header:hover {
+    -fx-background-color: #ccffcc;
+}
+
+.table-view.row-background{
+	-fx-background-color: #e6ffee;
+}
+#pane1 .split-pane-divider {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 0 10000em;
+}
+
+
+
+
+
+
+
+

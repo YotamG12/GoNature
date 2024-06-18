@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" stylesheets="@GroupReservation.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GroupReservationController">
+   <children>
+      <TextField id="txtFUserID" fx:id="txtFUserID" layoutX="261.0" layoutY="172.0" prefHeight="24.0" prefWidth="150.0" promptText="ID" />
+      <DatePicker id="datePicker" fx:id="datePicker" layoutX="262.0" layoutY="304.0" prefHeight="25.0" prefWidth="149.0" promptText="Date" />
+      <TextField id="txtFNumOfVisitors" fx:id="txtFNumOfVisitors" layoutX="262.0" layoutY="258.0" prefHeight="24.0" prefWidth="150.0" promptText="Number of Visitors" />
+      <TextField id="txtFPhoneNum" fx:id="txtFPhoneNum" layoutX="262.0" layoutY="396.0" prefHeight="24.0" prefWidth="150.0" promptText="Phone Number" />
+      <TextField id="txtFEmail" fx:id="txtFEmail" layoutX="261.0" layoutY="441.0" prefHeight="24.0" prefWidth="150.0" promptText="Email" />
+      <Button id="btnSubmit" fx:id="btnSubmit" layoutX="308.0" layoutY="483.0" mnemonicParsing="false" onAction="#CreateNewGroupeRservation" text="Submit" />
+      <Button fx:id="btnWL" layoutX="378.0" layoutY="559.0" mnemonicParsing="false" onAction="#WaitingListOption" text="Insert to Waiting List" visible="false" />
+      <Button fx:id="btnSAS" layoutX="167.0" layoutY="559.0" mnemonicParsing="false" onAction="#AvailableSlots" text="Show available slots" visible="false" />
+      <Button fx:id="btnExit" layoutX="600.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="40.0">
+         <graphic>
+            <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exitBtn.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+         <Button id="btnBack" fx:id="btnBack" mnemonicParsing="false" onAction="#Back" prefHeight="50.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fx:id="backImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/backBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ComboBox id="choiseBoxParkName" fx:id="choiseBoxParkName" layoutX="260.0" layoutY="212.0" prefWidth="150.0" promptText="Park Name" />
+      <ComboBox id="choiseBoxTime" fx:id="choiseBoxTime" layoutX="260.0" layoutY="350.0" prefWidth="150.0" promptText="Entrance Time" />
+      <Text id="txtError" fx:id="txtError" layoutX="134.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="jkhmngfdsdfghgfdsxcdghfd" textAlignment="CENTER" visible="false" />
+      <ImageView fitHeight="166.0" fitWidth="223.0" layoutX="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Group%20Reservation.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="250.0" fitWidth="150.0" layoutX="6.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/treeLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>

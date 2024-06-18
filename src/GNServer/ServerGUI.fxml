@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="881.0" prefWidth="630.0" stylesheets="@ServerGUI.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GNServer.ServerGUIController">
+   <children>
+      <Button id="btnServer" fx:id="btnServer" layoutX="451.0" layoutY="672.0" mnemonicParsing="false" onAction="#handleServerButtonClick" text="Show Server Details" textAlignment="CENTER" />
+      <TableView fx:id="tblClients" layoutX="25.0" layoutY="605.0" prefHeight="158.0" prefWidth="411.0">
+        <columns>
+          <TableColumn fx:id="clmHN" prefWidth="75.0" text="Host Name" />
+          <TableColumn fx:id="clmIP" prefWidth="173.0" text="IP" />
+            <TableColumn fx:id="clmCs" prefWidth="162.0" text="Connection status" />
+        </columns>
+      </TableView>
+      <TextField id="portxt" fx:id="portxt" alignment="CENTER" layoutX="249.0" layoutY="314.0" promptText="Enter port " />
+      <Button id="btnDone" fx:id="btnDone" layoutX="292.0" layoutY="509.0" mnemonicParsing="false" onAction="#Done" text="Connect" textAlignment="CENTER" />
+      <TextField id="portxt" fx:id="txtHostName" alignment="CENTER" layoutX="249.0" layoutY="379.0" promptText="Enter host name">
+         <font>
+            <Font name="Calibri Light" size="12.0" />
+         </font></TextField>
+      <TextField id="portxt" fx:id="txtUserName" alignment="CENTER" layoutX="248.0" layoutY="441.0" promptText="Enter user name" />
+      <TextField id="portxt" fx:id="txtPassword" alignment="CENTER" layoutX="249.0" layoutY="474.0" promptText="Enter password" />
+      <Label fx:id="lbserver1" layoutX="230.0" layoutY="348.0" text="Enter your SQL connection" textFill="#387046">
+         <font>
+            <Font name="Calibri Light Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="portxt" fx:id="txtSechmaName" alignment="CENTER" layoutX="248.0" layoutY="409.0" promptText="Enter sechma name" />
+      <Button fx:id="btnImportData" layoutX="167.0" layoutY="805.0" mnemonicParsing="false" onAction="#importData" text="Import Workers Data" textAlignment="CENTER" />
+      <Button fx:id="btnExit" layoutX="525.0" layoutY="848.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="91.0" text="Power Off" textAlignment="CENTER" />
+      <Label fx:id="lbserver11" layoutX="261.0" layoutY="563.0" text="The clients details" textAlignment="CENTER" textFill="#387046">
+         <font>
+            <Font name="Calibri Light Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbserver111" layoutX="124.0" layoutY="772.0" text="**Press the button if you want to import all the data. " textAlignment="CENTER" textFill="#387046">
+         <font>
+            <Font name="Calibri Light Italic" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="298.0" fitWidth="401.0" layoutX="122.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Go.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbserver1111" layoutX="10.0" layoutY="858.0" text="© All rights reserved to Team Number 11." textAlignment="CENTER" textFill="#387046">
+         <font>
+            <Font name="Calibri Light Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnImportUserData1" layoutX="332.0" layoutY="805.0" mnemonicParsing="false" onAction="#importUserData" text="Import Users Data" textAlignment="CENTER" />
+   </children>
+</Pane>

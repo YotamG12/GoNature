@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" stylesheets="@TravelerLogin.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TravelerLoginController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <Button id="btnLogin" fx:id="btnLogin" layoutX="302.0" layoutY="333.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+      <TextField id="txtFID" fx:id="txtFID" layoutX="253.0" layoutY="219.0" promptText="ID" />
+      <Label fx:id="lblInvalidPW" layoutX="282.0" layoutY="376.0" text="Invalid Password" textFill="#d30e0e" visible="false" />
+      <Label fx:id="lblIDnr" layoutX="279.0" layoutY="376.0" text="ID isn't registered" textFill="#cb1515" visible="false" />
+      <Label fx:id="lblconnected" layoutX="263.0" layoutY="376.0" text="User already connected" textFill="#f70202" visible="false">
+         <opaqueInsets>
+            <Insets top="-7.0" />
+         </opaqueInsets></Label>
+  		<Button fx:id="btnExit" layoutX="600.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="40.0">
+         <graphic>
+            <ImageView id="exitBtn" fx:id="exitBtn" fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exitBtn.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+         <Button id="btnBack" fx:id="btnBack" mnemonicParsing="false" onAction="#Back" prefHeight="50.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fx:id="backImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/backBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="219.0" layoutY="300.0" text="For Single Travelers, only ID needed">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField id="txtFPassword" fx:id="txtFPassword" layoutX="253.0" layoutY="260.0" promptText="Password" />
+      <ImageView fitHeight="206.0" fitWidth="333.0" layoutX="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Traveler%20login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/treeLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
